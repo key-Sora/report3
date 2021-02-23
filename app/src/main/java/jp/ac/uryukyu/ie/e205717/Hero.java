@@ -1,6 +1,6 @@
 package jp.ac.uryukyu.ie.e205717;
 
-class Hero extends LivingThing{
+public class Hero extends LivingThing{
 
     public Hero(String name, int maxHP, int attack) {
         super(name, maxHP, attack);
@@ -18,4 +18,9 @@ class Hero extends LivingThing{
             System.out.printf("勇者%sは道半ばで力尽きてしまった。\n", name);
         }
     }
+
+	public Integer getHitpoint() {
+        int defhp = 100;
+		return defhp;
+	}
 }
