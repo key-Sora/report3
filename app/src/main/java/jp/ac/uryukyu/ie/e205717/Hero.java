@@ -34,21 +34,42 @@ public class Hero {
      * attackに応じて乱数でダメージを算出し、hero.wounded()によりダメージ処理を実行。
      * @param e 攻撃対象
      */
-    public String getName(){
+    /** 
+     * フィールド変数nameのgetterメソッド。
+     */
+    public java.lang.String getName(){
         return name;
     }
-    public void setName(String name){
+    /**　
+     * フィールド変数nameのsetterメソッド。
+     * @param name 名前。
+     */
+    public void setName(java.lang.String name){
         this.name = name;
     }
+    /**　
+     * フィールド変数deadのgetterメソッド。 
+     */
     public boolean getDead(){
         return dead;
     }
+    /**　
+     * フィールド変数deadのsetterメソッド。
+     * @param dead　生死判定。
+     */
     public void setDead(){
         dead = false;
     }
+    /**　
+     * フィールド変数hitPointのgetterメソッド。 
+     */
     public int getHitpoint(){
         return hitPoint;
     }
+    /**　
+     * フィールド変数hitPointのsetterメソッド。
+     * @param hitPoint 打点。
+     */
     public void setHitpoint(int hitPoint){
         this.hitPoint = hitPoint;
     }

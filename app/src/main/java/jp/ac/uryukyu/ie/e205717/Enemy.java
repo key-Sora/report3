@@ -27,21 +27,42 @@ public class Enemy {
         dead = false;
         System.out.printf("%sのHPは%d。攻撃力は%dです。\n", name, maximumHP, attack);
     }
-    public String getName(){
+    /**
+     * フィールド変数nameのgetterメソッド。
+     */
+    public java.lang.String getName(){
         return name;
     }
-    public void setName(String name){
+    /**　
+     * フィールド変数nameのsetterメソッド。
+     * @param name モンスターの名前。
+     */
+    public void setName(java.lang.String name){
         this.name = name;
     }
+    /**　
+     * フィールド変数deadのgetterメソッド。 
+     */
     public boolean getDead(){
         return dead;
     }
+    /**　
+     * フィールド変数deadのsetterメソッド。
+     * @param dead 生死判定。
+     */
     public void setDead(){
         dead = false;
     }
+    /**　
+     * フィールド変数hitPointのgetterメソッド。 
+     */
     public int getHitpoint(){
         return hitPoint;
     }
+    /**　
+     * フィールド変数hitPointのsetterメソッド。
+     * @param hitPoint 打点。
+     */
     public void setHitpoint(int hitPoint){
         this.hitPoint = hitPoint;
     }
